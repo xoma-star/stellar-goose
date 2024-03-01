@@ -6,7 +6,7 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - '/pb_data:~/pb_data'
+      - './pocketbase-data:/pb/pb_data'
   server:
     build: ./server
     ports:
